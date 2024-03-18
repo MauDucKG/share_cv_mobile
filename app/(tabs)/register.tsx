@@ -12,10 +12,6 @@ export default function TabOneScreen() {
         for (var i = 0; i < elements2.length; i++) {
           elements2[i].style.display = 'none';
         }
-        var elements3 = document.getElementByClassName('css-9hht0b');
-        for (var i = 0; i < elements3.length; i++) {
-          elements3[i].style.display = 'none';
-        }
         });      
       true; // note: this is required, or you'll sometimes get silent failures
     `;
@@ -28,7 +24,7 @@ export default function TabOneScreen() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <WebView
-        source={{ uri: 'https://share-cv.vercel.app/' }}
+        source={{ uri: 'https://share-cv.vercel.app/register' }}
         onMessage={(event) => { }}
         injectedJavaScript={runFirst}
         injectedJavaScriptBeforeContentLoaded={runBeforeFirst}

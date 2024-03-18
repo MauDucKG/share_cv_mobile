@@ -48,9 +48,16 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="receiveCV"
         options={{
-          title: 'Tab Two',
+          title: 'Receive CV',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="register"
+        options={{
+          title: 'Receive CV',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
